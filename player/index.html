@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="./static/js/jquery.min.js"></script>
+
+  <title>M3U8 Player</title>
+  <script src="hls.min.js"></script>
+  <style>
+    body{
+      background-color:black;
+    }
+    #video{
+      position: absolute;
+      top: 100px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div >
+    <select id="ch">
+      <option value="https://cntv.sbs/live?auth=230612&id=hyyy
+      ">华语影院</option>
+      <option value="https://cntv.sbs/live?auth=230612&id=cctv1
+      ">Cctv1 </option>
+      <option value="http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8
+      ">香港佛陀</option>
+      <option value="http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+      ">香港卫视</option>
+      <option value="https://ntv2.akamaized.net/hls/live/2013923/NASA-NTV2-HLS/master_2000.m3u8
+      ">NASA-NTV2-HLS</option>
+      <option value="http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/arirang_3ch_audio/playlist.m3u8
+      ">阿里郎</option>
+      <option value="http://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_1xtra/bbc_1xtra.isml/bbc_1xtra-audio=320000.m3u8
+      ">bbc</option>
+      <option value="http://hls-igi.cdnvideo.ru/igi/igi_hq/playlist.m3u8
+      ">俄</option>
+      <option value="http://ngcdn003.cnr.cn/live/yyzs/index.m3u8
+      ">音乐之声</option>
+      <option value="https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
+      ">新加坡</option>
+      <option value="http://ngcdn004.cnr.cn/live/dszs/index.m3u8
+      ">经典音乐</option>
+
+      <option value="https://voa-ingest.akamaized.net/hls/live/2035206/151_124L/playlist.m3u8
+      ">美国之声</option>
+      <option value="http://tunein.ord.streamguys1.com/secure-CNNi
+      ">CNN</option>
+
+      <option value="http://lb.streaming.sk/fashiontv/stream/chunklist_w1906011378.m3u8
+      ">法时尚</option>
+      <option value="https://cntv.sbs/live?auth=230612&id=cctv13
+      ">Cctv13 </option>
+      <option value="http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
+      ">美红牛</option>
+      <option value="https://moviesphere-samsung-samsungus.amagi.tv/playlist.m3u8
+      ">三星</option>
+      <option value="http://51.210.199.24/hls/stream.m3u8
+      ">music</option>
+      <option value="http://51.210.199.20/hls/stream.m3u8
+      ">Nostalgia</option>
+      <option value="http://live.m2.tv/hls3/stream.m3u8
+      ">乌音乐</option>
+      <option value="http://live-hls-web-aja.getaj.net/AJA/02.m3u8
+      ">半新闻</option>
+
+
+
+    </select>
+  </div>
+  <video id="video" style="width: 100%; height: 100%;" controls autoplay></video>
+  <script src="player.js"></script>
+</body>
+</html>
